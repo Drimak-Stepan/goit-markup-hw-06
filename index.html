@@ -380,13 +380,85 @@
             </form>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop !is-hidden" data-modal>
         <div class="modal">
             <button class="btn-close" data-modal-close>
                 <svg class="icon-close" width="18" height="18">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg> 
             </button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form">
+                <div class="modal-subform">
+                    <label class="modal-label" for="user-name">Ім'я</label>
+                    <div class="input-box">
+                        <input
+                        type="text"
+                        class="modal-input"
+                        name="user-name"
+                        placeholder=""
+                        required
+                        id="user-name"/>
+                        <svg class="icon-modal" width="18" height="18">
+                        <use href="./images/icons.svg#icon-person-modal"></use></svg>
+                    </div>
+                </div>
+                <div class="modal-subform">
+                    <label class="modal-label" for="user-tel">Телефон</label>
+                    <div class="input-box">
+                        <input
+                        type="tel"
+                        class="modal-input"
+                        name="user-tel"
+                        placeholder=""
+                        required
+                        value=""
+                        title="+380 (96) 111-11-11"
+                        id="user-tel"/>
+                        <svg class="icon-modal" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone-modal"></use></svg>
+                    </div>
+                </div>
+                <div class="modal-subform">
+                    <label class="modal-label" for="user-email">Пошта</label>
+                    <div class="input-box">
+                        <input
+                        type="email"
+                        class="modal-input"
+                        name="user-email"
+                        placeholder=""
+                        required
+                        id="user-email"/>
+                        <svg class="icon-modal" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email-modal"></use></svg>
+                    </div>
+                </div>
+                <div class="modal-subform-coment">
+                    <label class="modal-label" for="user-text">Коментар</label>
+                    <textarea
+                    name="user-text"
+                    id="user-text"
+                    placeholder="Введіть текст"
+                    class="modal-text"
+                    ></textarea>
+                </div>
+                <div class="modal-subform-check">
+                    <input
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                    class="modal-check visually-hidden"
+                    value="true"/>
+                    <label for="policy" class="check-text">
+                        <span>
+                            <svg class="icon-check" width="11" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>Погоджуюся з розсилкою та приймаю <a class="check-link" href="/">Умови договору</a></label
+                    >
+                </div>
+                <button type="submit" class="btn-modal-send">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
