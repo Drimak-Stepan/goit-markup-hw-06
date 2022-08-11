@@ -902,6 +902,7 @@ width: calc((100% - 60px) / 3);
     position: absolute;
     left: 15px;
     top: 50%;
+    pointer-events: none;
     fill: #212121;
     transition: fill var(--transition-only);
     transform: translateY(-50%);}
@@ -926,10 +927,6 @@ width: calc((100% - 60px) / 3);
 .modal-input:hover + .icon-modal,
 .modal-input:focus + .icon-modal{
     fill: var(--active-color);
-}
-
-.icon-modal{
-    pointer-events: none
 }
 
 .modal-subform-coment{
