@@ -928,9 +928,14 @@ width: calc((100% - 60px) / 3);
     fill: var(--active-color);
 }
 
+.icon-modal{
+    pointer-events: none
+}
+
 .modal-subform-coment{
     margin-bottom: 20px;
 }
+
 .modal-text{
     width: 100%;
     height: 120px;
