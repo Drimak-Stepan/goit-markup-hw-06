@@ -782,8 +782,8 @@ width: calc((100% - 60px) / 3);
     transition: background-color var(--transition-only), outline-color var(--transition-only);
 }
 .btn-send:hover,
-.btn-send:focus{;
-    background-color:#188CE8
+.btn-send:focus{
+    background-color:#188CE8;
 
 }
 .btn-send:focus{
